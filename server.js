@@ -1,19 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const knex = require('knex');
 const cors = require('cors');
 const axios = require('axios');
 const direction = require('google-maps-direction');
-
-const db = knex({
-  client: 'pg',
-  connection: {
-    host : '127.0.0.1',
-    user : '',
-    password : '',
-    database : 'speedmaster'
-  }
-});
 
 let datab = {
   lat:'',
